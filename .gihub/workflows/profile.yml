@@ -1,0 +1,28 @@
+name: 🚀 Refresh Developer Profile
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: developer-profile
+  cancel-in-progress: true
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate live profile assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USERNAME: devRko
+        run: python scripts/generate_profile.py
+      - name: Commit refreshed assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add generated/
+          if git diff --cached --quiet; then echo "No changes."; else git commit -m "chore: refresh developer profile [skip ci]" && git push; fi
