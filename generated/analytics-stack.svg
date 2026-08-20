@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500" viewBox="0 0 1100 500">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22d3ee"/><stop offset=".55" stop-color="#60a5fa"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs>
+<rect width="1100" height="500" rx="28" fill="#050816"/>
+<rect x="2" y="2" width="1096" height="496" rx="27" fill="none" stroke="#24324a"/>
+<text x="550" y="48" text-anchor="middle" fill="url(#g)" font-family="Arial" font-size="26" font-weight="700">MY TECHNICAL STACK</text>
+<text x="550" y="74" text-anchor="middle" fill="#7f91aa" font-family="Arial" font-size="13">Languages, frameworks, tools and core competencies</text>
+<g font-family="Arial">
+<rect x="45" y="100" width="1010" height="72" rx="18" fill="#0b1220" stroke="#24324a"/>
+<text x="75" y="128" fill="#22d3ee" font-size="13" font-weight="700">LANGUAGES &amp; SCRIPTING</text>
+<text x="75" y="153" fill="#e8f0ff" font-size="16">Python • PHP • JavaScript (ES6+) • C/C++ • HTML5 • CSS3 • SQL</text>
+
+<rect x="45" y="195" width="1010" height="72" rx="18" fill="#0b1220" stroke="#24324a"/>
+<text x="75" y="223" fill="#22d3ee" font-size="13" font-weight="700">FRAMEWORKS &amp; LIBRARIES</text>
+<text x="75" y="248" fill="#e8f0ff" font-size="16">React.js • Node.js • NumPy • Pandas • Scikit-learn</text>
+
+<rect x="45" y="290" width="1010" height="72" rx="18" fill="#0b1220" stroke="#24324a"/>
+<text x="75" y="318" fill="#22d3ee" font-size="13" font-weight="700">DATABASES &amp; TOOLS</text>
+<text x="75" y="343" fill="#e8f0ff" font-size="16">MySQL • MongoDB • Git • GitHub • VS Code • Linux Shell</text>
+
+<rect x="45" y="385" width="1010" height="72" rx="18" fill="#0b1220" stroke="#24324a"/>
+<text x="75" y="413" fill="#22d3ee" font-size="13" font-weight="700">CORE COMPETENCIES</text>
+<text x="75" y="438" fill="#e8f0ff" font-size="16">DSA • OOP • RESTful APIs • SDLC • QA • Automation Testing</text>
+</g>
+</svg>
